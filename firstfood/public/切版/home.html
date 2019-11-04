@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>CarouselTitle</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../assets/fontawesome/css/all.css">
+
+  <style>
+    .testdiv {
+      height: 500px;
+    }
+
+    .section1 {
+      background: url(../assets/images/background.png) no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 500px;
+    }
+
+    .section1-bean {
+      position: relative;
+      top: -50px;
+      max-width: 700px;
+      min-height: 400px;
+      object-fit: cover;
+    }
+
+    .section1-bean-img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .look-box {
+      display: flex;
+    }
+
+    .look-box-p1 {
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .look-box-p2 {
+      border-left: 1px solid rgb(161, 161, 161);
+      border-right: 1px solid rgb(161, 161, 161);
+      text-align: center;
+      margin: 0 20px 0 20px;
+      padding: 0 10px 0 10px;
+      height: 50px;
+    }
+
+    .look-box-p3 {
+      line-height: 50px;
+    }
+
+    .vertical1 {
+      writing-mode: vertical-lr;
+      display: flex;
+      align-items: center;
+      margin-top: 50px;
+      text-orientation: upright;
+      margin-left: 100px;
+      /* 文字垂直: writing-mode: vertical-lr 如果要連英文以及符號也垂直:text-orientation:upright*/
+    }
+
+    .vertical2 {
+      writing-mode: vertical-lr;
+      display: flex;
+      margin-top: 50px;
+      text-orientation: upright;
+      border-top: 1px solid rgb(161, 161, 161);
+      border-bottom: 1px solid rgb(161, 161, 161);
+      justify-content: center;
+      height: 330px;
+
+    }
+
+    .vertical3 {
+      position: relative;
+      top: -30px;
+      writing-mode: vertical-lr;
+      display: flex;
+      align-items: center;
+      margin-right: 0px;
+      text-orientation: upright;
+    }
+
+    .vertical3-1 {
+      font-size: 30px;
+    }
+
+    .section1-right {
+      display: flex;
+      justify-content: space-around;
+
+    }
+
+    .up {
+      width: 50px;
+      height: 50px;
+      border: 1px solid black;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 60px;
+      position: relative;
+      top: 60px;
+      left: 200px;
+    }
+
+    .vertical4 {
+      width: 300px;
+      position: relative;
+      left: 840px;
+      top: -17px;
+      border-bottom: 2px solid rgb(77, 77, 77);
+      text-align: center;
+    }
+
+    /*以上為第一區塊*/
+    .section2 {
+      background-color: rgb(253, 249, 249);
+    }
+
+    .section2-image {
+      max-width: 120px;
+      height: 120px;
+      margin: 6px;
+    }
+
+    .section2-images {
+      display: flex;
+    }
+
+    .section2-left {
+      margin-top: 100px;
+    }
+
+    .section2-text1 {
+      border-top: 1px solid black;
+      max-width: 350px;
+      border-bottom: 1px dashed black;
+      padding: 8px 0 8px 0;
+    }
+
+    .section2-text2 {
+
+      max-width: 350px;
+      border-bottom: 1px dashed black;
+      padding: 0 0 12px 0;
+    }
+
+    .section2-text3 {
+      border-top: 1px solid black;
+      max-width: 250px;
+      margin-top: 38px;
+      padding: 8px 0 8px 0;
+    }
+
+    .section2-line {
+      height: 1px;
+      max-width: 660px;
+      background-color: gainsboro;
+    }
+
+    .section2-right1 {
+      display: flex;
+      justify-content: space-around;
+      margin: 20px 0 20px 0;
+    }
+
+    .section2-right2 {
+      text-align: center;
+      max-width: 300px;
+      padding: 20px 0 20px 0;
+      border-top: 1px dashed rgb(196, 193, 193);
+      border-bottom: 1px dashed rgb(196, 189, 189);
+    }
+
+    .section2-right3 {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .section2-line {
+      width: 1000px;
+      height: 1px;
+      background-color: rgb(196, 189, 189);
+    }
+
+    .oneComment {
+      width: 300px;
+      position: relative;
+      top: 2px;
+      left: -30px;
+      border-bottom: 2px solid rgb(77, 77, 77);
+      text-align: center;
+    }
+
+    /*以上為第二區塊*/
+
+    .section3-cont {
+      margin-top: 100px;
+    }
+    .section3-right{
+     text-align: center;
+     position: relative;
+    }
+    .section3-right-L1{
+      position: absolute;
+      top: 125px;
+      right:50px;
+    }
+    .section3-right-L2{
+      position: absolute;
+      top: 350px;
+      left: 60px;
+    }
+    .section3-right-text{
+      writing-mode: vertical-lr;
+      position:relative;
+      left: 80px;
+      top:50px;
+
+    }
+    .section3-right-text2{
+      font-size: 10px;
+      position: absolute;
+      top: 600px;
+    }
+    
+  </style>
+</head>
+<div class="testdiv">
+
+</div>
+
+
+
+<body>
+  <section class="section1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 ">
+          <div class="section1-bean">
+            <img class="section1-bean-img" src="../assets/images/bean.png" alt="">
+          </div>
+          <div class="look-box">
+            <p class="look-box-p1">Gallery</p>
+            <p class="look-box-p2">recommend <br>items</p>
+            <div class="look-box-p3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                <g id="Group_91" data-name="Group 91" transform="translate(-693 -1748)">
+                  <rect id="Rectangle_8" data-name="Rectangle 8" width="18" height="18"
+                    transform="translate(693 1748)" />
+                  <g id="Group_90" data-name="Group 90" transform="translate(696.398 1754.753)">
+                    <line id="Line_44" data-name="Line 44" x2="5.448" y2="5.561" transform="translate(0 0)" fill="none"
+                      stroke="#fff" stroke-width="2" />
+                    <line id="Line_45" data-name="Line 45" x1="6.053" y2="5.561" transform="translate(4.842 0)"
+                      fill="none" stroke="#fff" stroke-width="2" />
+                  </g>
+                </g>
+              </svg>
+              <p style="display: inline-block;">燈箱看大圖</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-5  section1-right">
+          <p class="vertical1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+              <g id="Group_91" data-name="Group 91" transform="translate(-693 -1748)">
+                <rect id="Rectangle_8" data-name="Rectangle 8" width="18" height="18" transform="translate(693 1748)" />
+                <g id="Group_90" data-name="Group 90" transform="translate(696.398 1754.753)">
+                  <line id="Line_44" data-name="Line 44" x2="5.448" y2="5.561" transform="translate(0 0)" fill="none"
+                    stroke="#fff" stroke-width="2" />
+                  <line id="Line_45" data-name="Line 45" x1="6.053" y2="5.561" transform="translate(4.842 0)"
+                    fill="none" stroke="#fff" stroke-width="2" />
+                </g>
+              </g>
+            </svg>
+
+
+            豆白豆&nbsp;&nbsp; 購買
+          </p>
+          <p class="vertical2">
+            黑土品質保證!<br>金黃亮麗!
+            <br>天然飽滿黃橙
+          </p>
+          <p class="vertical3">
+            <p class="vertical3 vertical3-1">豆白豆黃好吃好喝</p>
+            <p class="vertical3">豆白豆</p>
+          </p>
+          <div class="up">
+            <i class="fas fa-chevron-up  fa-2x"></i>
+          </div>
+
+
+        </div>
+        <div class="vertical4">from 行天宮 徐先生</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9 section2-left">
+          <div class="section2-images">
+            <div class="section2-image"><img style="width: 100%;height: 100%;object-fit: cover;" src="../assets/images/1.jpg"
+                alt=""></div>
+            <div class="section2-image"><img style="width: 100%;height: 100%;object-fit: cover;" src="../assets/images/2.jpg"
+                alt=""></div>
+            <div class="section2-image"><img style="width: 100%;height: 100%;object-fit: cover;" src="../assets/images/6.jpg"
+                alt=""></div>
+            <div class="section2-image"><img style="width: 100%;height: 100%;object-fit: cover;" src="../assets/images/4.jpg"
+                alt=""></div>
+            <div class="section2-image"><img style="width: 100%;height: 100%;object-fit: cover;" src="../assets/images/5.jpg"
+                alt=""></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+              <p>Shopping Cart</p>
+              <p class="section2-text1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                  <g id="Ellipse_11" data-name="Ellipse 11" fill="none" stroke="#000" stroke-width="3">
+                    <circle cx="6.5" cy="6.5" r="6.5" stroke="none" />
+                    <circle cx="6.5" cy="6.5" r="5" fill="none" />
+                  </g>
+                </svg>
+                原料材料&emsp;&emsp;&emsp;&emsp;&emsp;黃豆
+              </p>
+              <p class="section2-text2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                  <g id="Ellipse_11" data-name="Ellipse 11" fill="none" stroke="#000" stroke-width="3">
+                    <circle cx="6.5" cy="6.5" r="6.5" stroke="none" />
+                    <circle cx="6.5" cy="6.5" r="5" fill="none" />
+                  </g>
+                </svg>
+                容量&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;150g
+              </p>
+
+              <p class="section2-text2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                  <g id="Ellipse_11" data-name="Ellipse 11" fill="none" stroke="#000" stroke-width="3">
+                    <circle cx="6.5" cy="6.5" r="6.5" stroke="none" />
+                    <circle cx="6.5" cy="6.5" r="5" fill="none" />
+                  </g>
+                </svg>
+                保存方法&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;請至於室內通風陰涼處
+              </p>
+            </div>
+
+            <div class="col-md-6 section2-text3">
+              <div>
+                黃豆陰風陰涼處黃豆陰處。黃豆陰
+                風陰涼處黃豆陰處。
+                黃豆陰風陰涼處黃豆陰處。
+                黃豆陰風陰涼處黃豆陰處。
+                黃豆陰風陰涼處黃豆陰處。黃豆陰
+                風陰涼處黃豆陰處。
+                wu0 wu顆顆> 黃豆陰風陰涼處黃豆陰處。黃豆陰
+                風陰涼處黃豆陰處。
+                黃豆陰風陰涼處黃豆陰處。
+                黃豆陰風陰涼處黃豆陰處。
+                黃豆陰風陰涼處黃豆陰處。黃豆陰
+                風陰涼處黃豆陰處。
+                wu0 wu顆顆>
+
+              </div>
+            </div>
+          </div>
+          <div class="section2-line"></div>
+
+
+          <div class="row">
+            <div class="col-md-7">
+              <div style="margin: 25px 0 0 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <g id="Group_103" data-name="Group 103" transform="translate(-1748 711) rotate(-90)">
+                    <rect id="Rectangle_8" data-name="Rectangle 8" width="18" height="18"
+                      transform="translate(693 1748)" />
+                    <g id="Group_90" data-name="Group 90" transform="translate(696.398 1754.753)">
+                      <line id="Line_44" data-name="Line 44" x2="5.448" y2="5.561" transform="translate(0 0)"
+                        fill="none" stroke="#fff" stroke-width="2" />
+                      <line id="Line_45" data-name="Line 45" x1="6.053" y2="5.561" transform="translate(4.842 0)"
+                        fill="none" stroke="#fff" stroke-width="2" />
+                    </g>
+                  </g>
+                </svg>
+                其他「 豆類 」產品
+              </div>
+
+              <div style="margin: 25px 0 25px 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <g id="Group_103" data-name="Group 103" transform="translate(-1748 711) rotate(-90)">
+                    <rect id="Rectangle_8" data-name="Rectangle 8" width="18" height="18"
+                      transform="translate(693 1748)" />
+                    <g id="Group_90" data-name="Group 90" transform="translate(696.398 1754.753)">
+                      <line id="Line_44" data-name="Line 44" x2="5.448" y2="5.561" transform="translate(0 0)"
+                        fill="none" stroke="#fff" stroke-width="2" />
+                      <line id="Line_45" data-name="Line 45" x1="6.053" y2="5.561" transform="translate(4.842 0)"
+                        fill="none" stroke="#fff" stroke-width="2" />
+                    </g>
+                  </g>
+                </svg>
+                其他「 中部 」產品
+              </div>
+
+              <div style="color:red">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <g id="Group_103" data-name="Group 103" transform="translate(-1748 711) rotate(-90)">
+                    <rect id="Rectangle_8" data-name="Rectangle 8" width="18" height="18"
+                      transform="translate(693 1748)" />
+                    <g id="Group_90" data-name="Group 90" transform="translate(696.398 1754.753)">
+                      <line id="Line_44" data-name="Line 44" x2="5.448" y2="5.561" transform="translate(0 0)"
+                        fill="none" stroke="#fff" stroke-width="2" />
+                      <line id="Line_45" data-name="Line 45" x1="6.053" y2="5.561" transform="translate(4.842 0)"
+                        fill="none" stroke="#fff" stroke-width="2" />
+                    </g>
+                  </g>
+                </svg>
+                其他「 黃色 」產品
+              </div>
+
+
+
+
+
+            </div>
+
+            <div class="col-md-5">
+              <div style="margin: 25px 0 25px 0;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <g id="Group_103" data-name="Group 103" transform="translate(-1748 711) rotate(-90)">
+                    <rect id="Rectangle_8" data-name="Rectangle 8" width="18" height="18"
+                      transform="translate(693 1748)" />
+                    <g id="Group_90" data-name="Group 90" transform="translate(696.398 1754.753)">
+                      <line id="Line_44" data-name="Line 44" x2="5.448" y2="5.561" transform="translate(0 0)"
+                        fill="none" stroke="#fff" stroke-width="2" />
+                      <line id="Line_45" data-name="Line 45" x1="6.053" y2="5.561" transform="translate(4.842 0)"
+                        fill="none" stroke="#fff" stroke-width="2" />
+                    </g>
+                  </g>
+                </svg>
+                運送問題
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="col-md-3">
+          <div style="margin-top: 100px; max-width:250px;height: 250px;">
+            <img style="width: 100%;height: 100%;" src="../assets/images/7.jpg" alt="">
+          </div>
+
+          <div class="section2-right1">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23"
+                viewBox="0 0 23 23">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect width="23" height="23" fill="none" />
+                  </clipPath>
+                </defs>
+                <g id="Symbol_97_5" data-name="Symbol 97 – 5" clip-path="url(#clip-path)">
+                  <path id="Heart"
+                    d="M21.034,1.85a6.135,6.135,0,0,0-8.733,0l-.859.859-.859-.859A6.175,6.175,0,1,0,1.85,10.583l9.592,9.592,9.592-9.592a6.135,6.135,0,0,0,0-8.733"
+                    transform="translate(-0.025 1.402)" fill-rule="evenodd" />
+                  <rect id="Rectangle_1450" data-name="Rectangle 1450" width="23" height="23" fill="none" />
+                </g>
+              </svg>
+              <p style="display: inline-block;">609</p>
+            </div>
+
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23"
+                viewBox="0 0 23 23">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect width="23" height="23" fill="none" />
+                  </clipPath>
+                </defs>
+                <g id="Symbol_96_15" data-name="Symbol 96 – 15" clip-path="url(#clip-path)">
+                  <path id="Chat"
+                    d="M7.136,11.417a1.348,1.348,0,0,0,1.427,1.427h5.708A1.43,1.43,0,0,0,15.7,11.417,1.348,1.348,0,0,0,14.271,9.99H8.563A1.43,1.43,0,0,0,7.136,11.417ZM0,7.136A7.066,7.066,0,0,1,7.136,0H15.7a7.066,7.066,0,0,1,7.136,7.136V21.407a1.348,1.348,0,0,1-1.427,1.427H7.136A7.066,7.066,0,0,1,0,15.7Z"
+                    fill-rule="evenodd" />
+                </g>
+              </svg>
+              <p style="display: inline-block;">120</p>
+            </div>
+
+            <div>
+              <p style="display: inline-block;color: red;">save</p>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="23" height="23"
+                viewBox="0 0 23 23">
+                <defs>
+                  <clipPath id="clip-path">
+                    <rect width="23" height="23" fill="none" />
+                  </clipPath>
+                </defs>
+                <g id="Symbol_125_10" data-name="Symbol 125 – 10" clip-path="url(#clip-path)">
+                  <rect id="Rectangle_239" data-name="Rectangle 239" width="23" height="23" fill="none" />
+                  <path id="Path_110" data-name="Path 110" d="M0,0H17.125V22.834L8.563,14.271,0,22.834Z"
+                    transform="translate(2.854)" fill="#ac1515" />
+                </g>
+              </svg>
+
+            </div>
+
+          </div>
+
+
+          <p style="text-align: center;">Shopping Cart</p>
+
+          <div class="section2-right2">豆白豆 豆白豆黃好吃喝</div>
+
+          <div class="section2-right3">
+            <p style="line-height: 55px;">價格</p>
+            <p style="color: red;font-size: 30px;">1620</p>
+            <p style="color: red;font-size: 30px;">NT(含稅)</p>
+          </div>
+
+          <div>
+            <button type="button" style="background-color: #2C5753;color: white;width: 105px;">購買</button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <g id="Ellipse_12" data-name="Ellipse 12" fill="#2c5753" stroke="#707070" stroke-width="1">
+                <circle cx="8" cy="8" r="8" stroke="none" />
+                <circle cx="8" cy="8" r="7.5" fill="none" />
+              </g>
+              <g id="Group_117" data-name="Group 117" transform="translate(3 3)">
+                <g id="Rectangle_1464" data-name="Rectangle 1464" transform="translate(0 4)" fill="#fff" stroke="#fff"
+                  stroke-width="1">
+                  <rect width="10" height="2" rx="1" stroke="none" />
+                  <rect x="0.5" y="0.5" width="9" height="1" rx="0.5" fill="none" />
+                </g>
+                <g id="Rectangle_1465" data-name="Rectangle 1465" transform="translate(6 0) rotate(90)" fill="#fff"
+                  stroke="#fff" stroke-width="1">
+                  <rect width="10" height="2" rx="1" stroke="none" />
+                  <rect x="0.5" y="0.5" width="9" height="1" rx="0.5" fill="none" />
+                </g>
+              </g>
+            </svg>
+
+            <input type="text" style="max-width: 100px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+              <g id="Ellipse_13" data-name="Ellipse 13" fill="#2c5753" stroke="#707070" stroke-width="1">
+                <circle cx="8" cy="8" r="8" stroke="none" />
+                <circle cx="8" cy="8" r="7.5" fill="none" />
+              </g>
+              <g id="Group_118" data-name="Group 118" transform="translate(3 3)">
+                <g id="Path_112" data-name="Path 112" transform="translate(0 4)" fill="#2c5753">
+                  <path
+                    d="M 9 1.5 L 1 1.5 C 0.7243000268936157 1.5 0.5 1.275699973106384 0.5 1 C 0.5 0.7243000268936157 0.7243000268936157 0.5 1 0.5 L 9 0.5 C 9.275699615478516 0.5 9.5 0.7243000268936157 9.5 1 C 9.5 1.275699973106384 9.275699615478516 1.5 9 1.5 Z"
+                    stroke="none" />
+                  <path
+                    d="M 1 0 L 9 0 C 9.552289962768555 0 10 0.4477200508117676 10 1 C 10 1.552279949188232 9.552289962768555 2 9 2 L 1 2 C 0.4477100372314453 2 0 1.552279949188232 0 1 C 0 0.4477200508117676 0.4477100372314453 0 1 0 Z"
+                    stroke="none" fill="#fff" />
+                </g>
+              </g>
+            </svg>
+
+
+
+          </div>
+
+          <div
+            style="display:flex;justify-content:center;margin:30px;border:1px solid black;padding:10px 0 10px 0;max-width: 220px;">
+            <p style="font-size: 20px;margin-bottom: 0px;">加入購物車</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 35.267 31.348">
+              <path id="shopping-cart-solid"
+                d="M32.335,18.449,35.229,5.714a1.469,1.469,0,0,0-1.433-1.8H9.748L9.187,1.175A1.469,1.469,0,0,0,7.747,0H1.469A1.469,1.469,0,0,0,0,1.469v.98A1.469,1.469,0,0,0,1.469,3.919H5.748l4.3,21.027a3.429,3.429,0,1,0,4.1.524H26.99a3.428,3.428,0,1,0,3.894-.637l.338-1.486a1.469,1.469,0,0,0-1.433-1.8H13.355l-.4-1.959H30.9A1.469,1.469,0,0,0,32.335,18.449Z" />
+            </svg>
+
+          </div>
+
+
+          <div class="oneComment">ONE COMMENT</div>
+
+        </div>
+
+      </div>
+      <div style="width: 100%;height: 1px;background-color: rgb(218, 218, 218);"></div>
+    </div>
+  </section>
+
+  <section class="section3">
+    <div class="container section3-cont">
+      <div class="row">
+        <div class="col-md-9">
+          <div style="max-width: 750px;height: 500px;"><img
+                  style="width: 100%;height: 100%;object-fit: cover;object-position: top;" src="../assets/images/8.jpg" alt=""></div>
+          <p style="margin-right:5px ;">HomeMain
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 11.426 12.855">
+              <path id="Polygon_1" data-name="Polygon 1" d="M6.427,0l6.427,11.426H0Z"
+                transform="translate(11.426) rotate(90)" />
+            </svg>
+          </p>
+          <div>
+            課程
+            <svg xmlns="http://www.w3.org/2000/svg" width="17.847" height="17.847" viewBox="0 0 17.847 17.847">
+              <line id="Line_10" data-name="Line 10" x1="17.14" y2="17.14" transform="translate(0.354 0.354)"
+                fill="none" stroke="#707070" stroke-width="1" />
+            </svg>
+            課程
+            <svg xmlns="http://www.w3.org/2000/svg" width="17.847" height="17.847" viewBox="0 0 17.847 17.847">
+              <line id="Line_10" data-name="Line 10" x1="17.14" y2="17.14" transform="translate(0.354 0.354)"
+                fill="none" stroke="#707070" stroke-width="1" />
+            </svg>
+            課程
+            <svg xmlns="http://www.w3.org/2000/svg" width="17.847" height="17.847" viewBox="0 0 17.847 17.847">
+              <line id="Line_10" data-name="Line 10" x1="17.14" y2="17.14" transform="translate(0.354 0.354)"
+                fill="none" stroke="#707070" stroke-width="1" />
+            </svg>
+            課程
+            <svg xmlns="http://www.w3.org/2000/svg" width="17.847" height="17.847" viewBox="0 0 17.847 17.847">
+              <line id="Line_10" data-name="Line 10" x1="17.14" y2="17.14" transform="translate(0.354 0.354)"
+                fill="none" stroke="#707070" stroke-width="1" />
+            </svg>
+
+          </div>
+
+          <div style="display: flex;align-items: center;justify-content: start;">
+            <div style="width: 100px;height: 100px;">
+              <img style="width: 100%;height: 100%;object-fit: contain;" src="../assets/images/logo.svg" alt="">
+            </div>
+            <div style="display:flex;margin:7px 0 0 50px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 18.217 17.181"
+                style="margin-top: 7px;">
+                <g id="Group_32" data-name="Group 32" transform="translate(0 0.5)">
+                  <line id="Line_34" data-name="Line 34" x2="18.217" transform="translate(0 6.255)" fill="none"
+                    stroke="#000" stroke-width="1" />
+                  <line id="Line_33" data-name="Line 33" x2="18.217" fill="none" stroke="#000" stroke-width="1" />
+                  <line id="Line_35" data-name="Line 35" y2="9.998" transform="translate(9.108 6.683)" fill="none"
+                    stroke="#000" stroke-width="1" />
+                </g>
+              </svg>
+
+              <p>台北市大安區復興南路一段390號 tel. 026631-6666 </p>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-md-3">
+          <div class="section3-right">
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="164" viewBox="0 0 142 164" style="margin-top: -70px;">
+                  <g id="Group_107" data-name="Group 107" transform="translate(-912 -2409)">
+                    <g id="Group_155" data-name="Group 155">
+                      <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(912 2409)" fill="none" stroke="#000" stroke-width="2">
+                        <ellipse cx="71" cy="72" rx="71" ry="72" stroke="none"/>
+                        <ellipse cx="71" cy="72" rx="70" ry="71" fill="none"/>
+                      </g>
+                      <g id="Ellipse_10" data-name="Ellipse 10" transform="translate(920 2418)" fill="none" stroke="#000" stroke-width="2">
+                        <ellipse cx="63" cy="63.5" rx="63" ry="63.5" stroke="none"/>
+                        <ellipse cx="63" cy="63.5" rx="62" ry="62.5" fill="none"/>
+                      </g>
+                      <text id="評_" data-name="評" transform="translate(967 2492)" font-size="32" font-family="YuGothicUI-Bold, Yu Gothic UI" font-weight="700"><tspan x="0" y="0">評</tspan><tspan y="0" font-family="SegoeUI-Bold, Segoe UI"></tspan><tspan font-family="SegoeUI-Bold, Segoe UI"><tspan x="0" y="73"></tspan></tspan></text>
+                    </g>
+                  </g>
+                </svg>
+            </div>
+              
+           
+            <div class="section3-right-L1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 54.5 57.5">
+                  <g id="Group_108" data-name="Group 108" transform="translate(-1521.5 -3050)">
+                    <line id="Line_53" data-name="Line 53" x2="54" transform="translate(1521.5 3050.5)" fill="none" stroke="#707070" stroke-width="1"/>
+                    <line id="Line_54" data-name="Line 54" y1="57" transform="translate(1575.5 3050.5)" fill="none" stroke="#707070" stroke-width="1"/>
+                  </g>
+                </svg>
+            </div>
+            
+            <p class="section3-right-text">
+              怎麼那麼好吃怎麼那麼好吃怎<br>麼那麼好吃怎麼那麼好吃怎麼<br>那麼好吃怎麼那麼好吃
+
+            </p>
+            <div class="section3-right-L2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 54.5 57.5">
+                  <g id="Group_109" data-name="Group 109" transform="translate(1576 3107.5) rotate(180)">
+                    <line id="Line_53" data-name="Line 53" x2="54" transform="translate(1521.5 3050.5)" fill="none" stroke="#707070" stroke-width="1"/>
+                    <line id="Line_54" data-name="Line 54" y1="57" transform="translate(1575.5 3050.5)" fill="none" stroke="#707070" stroke-width="1"/>
+                  </g>
+                </svg>                
+            </div>
+            <p class="section3-right-text2">
+                copyright (c) first food.. All Rights Reserved.
+            </p>
+            
+  
+          </div>
+            
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </section>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="../../src/assets/fontawesome/js/all.js"></script>
+</body>
+
+</html>
